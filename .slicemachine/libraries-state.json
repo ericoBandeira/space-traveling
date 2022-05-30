@@ -1,0 +1,76 @@
+{
+  "slices": {
+    "components": {
+      "slide_test": {
+        "library": "slices",
+        "id": "slide_test",
+        "name": "SlideTest",
+        "description": "SlideTest",
+        "model": {
+          "id": "slide_test",
+          "type": "SharedSlice",
+          "name": "SlideTest",
+          "description": "SlideTest",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SlideTest",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "slide_test",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Reinvent intuitive action-items",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliquip ad sint aliqua excepteur dolor nulla nisi in Lorem sunt nostrud enim nostrud. Enim exercitation enim do aliquip incididunt consequat aliqua eiusmod quis cupidatat quis.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

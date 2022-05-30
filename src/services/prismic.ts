@@ -1,18 +1,14 @@
-import * as prismic from '@prismicio/client';
-import { HttpRequestLike } from '@prismicio/client';
-import { enableAutoPreviews } from '@prismicio/next';
+import Prismic from '@prismicio/client';
+import { DefaultClient } from '@prismicio/client/types/client';
 
-export interface PrismicConfig {
-  req?: HttpRequestLike;
-}
+export function getPrismicClient(req?: unknown): DefaultClient {
+  const prismic = Prismic.client('https://ignewnews.prismic.io/api/v2', {
+    accessToken:
+      'MC5ZcFZKeGhBQUFDTUFhc29y.77-977-9bu-_ve-_ve-_vQnvv73vv70KfX1zTO-_ve-_ve-_ve-_vTDvv70RJO-_vTnvv73vv71pE0kBQO-_vQ',
+    req,
+  });
 
-export function getPrismicClient(config: PrismicConfig): prismic.Client {
-  const client = prismic.createClient(process.env.PRISMIC_API_ENDPOINT);
+  console.log(prismic, 'teste');
 
-  enableAutoPreviews({
-    client,
-    req: config.req,
-  })
-
-  return client;
+  return prismic;
 }

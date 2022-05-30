@@ -1,0 +1,21 @@
+{
+  "_cts": {
+    "teste-prova-ignite": {
+      "text": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "author": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "SlideTest": {}
+  }
+}
